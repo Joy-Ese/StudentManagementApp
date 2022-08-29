@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StudentManagement.Models.DataObjects;
 using StudentManagement.Models.Entities;
 
 namespace StudentManagement.Api.Controllers
@@ -35,7 +36,7 @@ namespace StudentManagement.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Student>>> GetStudents()
+        public async Task<ActionResult<List<Student>>> GetAllStudents()
         {
             return Ok(await _context.Students.ToListAsync());
         }
@@ -50,18 +51,33 @@ namespace StudentManagement.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Student>>> AddStudent(Student studentDetail)
+        public async Task<ActionResult<List<Student>>> AddStudent([FromBody] StudentDto student)
         {
-            _context.Students.Add(studentDetail);
+            Student studentInfo = new Student
+            {
+                RegNumber = student.RegNumber,
+                FirstName = student.FirstName,
+                MiddleName = student.MiddleName,
+                LastName = student.LastName,
+                Email = student.Email,
+                Department = student.Department,
+                Gender = student.Gender,
+                Address = student.Address,
+                CreatedBy = student.CreatedBy,
+                CreatedDate = student.CreatedDate,
+                UpdatedBy = student.UpdatedBy,
+                UpdatedDate = student.UpdatedDate,
+            };
+            _context.Students.Add(studentInfo);
             await _context.SaveChangesAsync();
 
             return Ok(await _context.Students.ToListAsync());
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<Student>>> UpdateStudent(Student request)
+        public async Task<ActionResult<List<Student>>> UpdateStudent([FromRoute] int id, StudentDto request)
         {
-            var dbStudentDetail = await _context.Students.FindAsync(request.Id);
+            var dbStudentDetail = await _context.Students.FindAsync(id);
             if (dbStudentDetail == null)
                 return BadRequest("Student not found");
 
