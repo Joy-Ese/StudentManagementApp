@@ -1,0 +1,17 @@
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Services.deps.json
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Services.runtimeconfig.json
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Services.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Services.pdb
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Models.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\bin\Debug\net6.0\StudentManagement.Models.pdb
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.csproj.AssemblyReference.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.AssemblyInfoInputs.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.AssemblyInfo.cs
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.csproj.CopyComplete
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\refint\StudentManagement.Services.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.pdb
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\StudentManagement.Services.genruntimeconfig.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Services\obj\Debug\net6.0\ref\StudentManagement.Services.dll

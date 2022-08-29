@@ -1,0 +1,14 @@
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\bin\Debug\net6.0\StudentManagement.Models.deps.json
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\bin\Debug\net6.0\StudentManagement.Models.runtimeconfig.json
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\bin\Debug\net6.0\StudentManagement.Models.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\bin\Debug\net6.0\StudentManagement.Models.pdb
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.csproj.AssemblyReference.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.AssemblyInfoInputs.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.AssemblyInfo.cs
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\refint\StudentManagement.Models.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.pdb
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\StudentManagement.Models.genruntimeconfig.cache
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Models\obj\Debug\net6.0\ref\StudentManagement.Models.dll
