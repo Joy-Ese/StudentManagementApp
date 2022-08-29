@@ -26,20 +26,23 @@ namespace StudentManagement.Services.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<StudentViewModel>> GetAllStudents()
+        public async Task<List<StudentViewModel>> GetAllStudents()
         {
-            //try
-            //{
-            //    List<StudentViewModel> studentDetailsList = new List<StudentViewModel>();
-            //    var data = await _context.Students.ToListAsync();
+            try
+            {
+                List<StudentViewModel> studentDetailsList = new List<StudentViewModel>();
+                var data = await _context.Students.ToListAsync();
 
-            //    studentDetailsList.AddRange((IEnumerable<StudentViewModel>)data);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            throw new NotImplementedException();
+                //studentDetailsList.AddRange((IEnumerable<StudentViewModel>)data);
+                return studentDetailsList;
+
+                //return Ok(await _context.Students.ToListAsync());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            //throw new NotImplementedException();
 
         }
 
