@@ -10,7 +10,7 @@ namespace StudentManagement.Services.Interfaces
     public interface IStudent
     {
         Task<List<StudentViewModel>> GetAllStudents();
-        Task<List<StudentViewModel>> GetStudent(int id);
+        Task<StudentViewModel> GetStudent(int id);
         Task<List<StudentViewModel>> AddStudent(StudentDto student);
         Task<List<StudentViewModel>> UpdateStudent(int id, StudentDto student);
         Task<List<StudentViewModel>> DeleteStudent(int id);
