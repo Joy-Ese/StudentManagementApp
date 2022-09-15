@@ -6,7 +6,7 @@
         private DateTime updatedDate;
 
         public int Id { get; set; }
-        public long RegNumber { get; set; }
+        public string RegNumber { get; set; } = string.Empty;
         public string FirstName { get; set; } = string.Empty;
         public string MiddleName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
@@ -18,6 +18,7 @@
         public DateTime CreatedDate { get => createdDate; set => createdDate = value; }
         public string UpdatedBy { get; set; } = string.Empty;
         public DateTime UpdatedDate { get => updatedDate; set => updatedDate = value; }
+        public bool IsActive { get; set; } = true;
 
     }
 }

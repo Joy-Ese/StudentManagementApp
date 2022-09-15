@@ -6,6 +6,10 @@ C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\StudentManagement.Api.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\StudentManagement.Api.pdb
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\System.Web.Http.Cors.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -21,6 +25,8 @@ C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

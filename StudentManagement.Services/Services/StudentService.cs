@@ -36,6 +36,7 @@ namespace StudentManagement.Services.Services
                     Department = student.Department,
                     Gender = student.Gender,
                     Address = student.Address,
+                    IsActive = true,
                 };
                 await _context.Students.AddAsync(studentInfo);
                 var result = await _context.SaveChangesAsync();
@@ -60,7 +61,33 @@ namespace StudentManagement.Services.Services
             {
                 var data = await _context.Students.FindAsync(id);
                 if (data == null) return null;
-                _context.Students.Remove(data);
+
+                data.IsActive = false;
+
+                await _context.SaveChangesAsync();
+
+                students = await GetAllStudents();
+
+                return students;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return students;
+            }
+        }
+
+        public async Task<List<StudentViewModel>> RestoreStudent(int id)
+        {
+            List<StudentViewModel> students = new List<StudentViewModel>();
+
+            try
+            {
+                var data = await _context.Students.FindAsync(id);
+                if (data == null) return null;
+
+                data.IsActive = true;
+
                 await _context.SaveChangesAsync();
 
                 students = await GetAllStudents();
@@ -132,9 +159,36 @@ namespace StudentManagement.Services.Services
             }
         }
 
-        public Task<List<StudentViewModel>> UpdateStudent(int id, StudentDto student)
+        public async Task<List<StudentViewModel>> UpdateStudent(int id, StudentDto request)
         {
-            throw new NotImplementedException();
+            List<StudentViewModel> students = new List<StudentViewModel>();
+
+            try
+            {
+                var data = await _context.Students.FindAsync(id);
+                if (data == null) return null;
+
+                data.RegNumber = request.RegNumber;
+                data.FirstName = request.FirstName;
+                data.MiddleName = request.MiddleName;
+                data.LastName = request.LastName;
+                data.Email = request.Email;
+                data.Address = request.Address;
+                data.Department = request.Department;
+                data.Gender = request.Gender;
+
+                await _context.SaveChangesAsync();
+
+                students = await GetAllStudents();
+
+
+                return students;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return students;
+            }
         }
 
     }

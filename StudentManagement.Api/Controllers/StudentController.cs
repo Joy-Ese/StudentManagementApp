@@ -47,31 +47,26 @@ namespace StudentManagement.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult<List<StudentViewModel>>> UpdateStudent([FromRoute] int id, StudentDto request)
         {
-            var dbStudentDetail = await _context.Students.FindAsync(id);
-            if (dbStudentDetail == null)
-                return BadRequest("Student not found");
+            var result = await _studentService.UpdateStudent(id, request);
 
-            dbStudentDetail.RegNumber = request.RegNumber;
-            dbStudentDetail.FirstName = request.FirstName;
-            dbStudentDetail.MiddleName = request.MiddleName;
-            dbStudentDetail.LastName = request.LastName;
-            dbStudentDetail.Email = request.Email;
-            dbStudentDetail.Department = request.Department;
-            dbStudentDetail.Gender = request.Gender;
-            dbStudentDetail.Address = request.Address;
-
-            await _context.SaveChangesAsync();
-
-            return Ok(await _context.Students.ToListAsync());
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<List<StudentViewModel>>> DeleteStudent(int id)
         {
             var result = await _studentService.DeleteStudent(id);
+
+            return Ok(result);
+        }
+
+        [HttpPost("{id}")]
+        public async Task<ActionResult<List<Student>>> RestoreStudent(int id)
+        {
+            var result = await _studentService.RestoreStudent(id);
 
             return Ok(result);
         }

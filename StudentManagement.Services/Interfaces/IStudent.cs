@@ -14,5 +14,7 @@ namespace StudentManagement.Services.Interfaces
         Task<List<StudentViewModel>> AddStudent(StudentDto student);
         Task<List<StudentViewModel>> UpdateStudent(int id, StudentDto student);
         Task<List<StudentViewModel>> DeleteStudent(int id);
+        Task<List<StudentViewModel>> RestoreStudent(int id);
+
     }
 }

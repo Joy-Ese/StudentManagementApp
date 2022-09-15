@@ -9,7 +9,7 @@ namespace StudentManagement.Models.DataObjects
     public class StudentViewModel
     {
         public int Id { get; set; }
-        public long RegNumber { get; set; }
+        public string RegNumber { get; set; } = string.Empty;
         public string FirstName { get; set; } = string.Empty;
         public string MiddleName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
@@ -21,8 +21,8 @@ namespace StudentManagement.Models.DataObjects
 
     public class StudentDto
     {
-       
-        public long RegNumber { get; set; }
+
+        public string RegNumber { get; set; } = string.Empty;
         public string FirstName { get; set; } = string.Empty;
         public string MiddleName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
