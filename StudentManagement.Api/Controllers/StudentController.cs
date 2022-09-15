@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentManagement.Models.DataObjects;
 using StudentManagement.Models.Entities;
@@ -20,7 +21,7 @@ namespace StudentManagement.Api.Controllers
             _studentService = studentService;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize(Roles = "Admin")]
         public async Task<ActionResult<List<StudentViewModel>>> GetAllStudents()
         {
             var result = await _studentService.GetAllStudents();

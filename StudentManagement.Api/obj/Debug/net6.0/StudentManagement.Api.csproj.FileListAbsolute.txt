@@ -69,3 +69,8 @@ C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\obj\Debug\net6.0\StudentManagement.Api.pdb
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\obj\Debug\net6.0\StudentManagement.Api.genruntimeconfig.cache
 C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\obj\Debug\net6.0\ref\StudentManagement.Api.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Scrutor.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\joyihama\Documents\Projects\StudentManagementApp\StudentManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

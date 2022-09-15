@@ -93,8 +93,9 @@ namespace StudentManagement.Services.Services
         {
             List<Claim> claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name as string, user.RegNumber),
-                new Claim(ClaimTypes.SerialNumber as string, user.Id.ToString())
+                new Claim(ClaimTypes.Name, user.RegNumber),
+                new Claim(ClaimTypes.Role, "Admin"),
+                new Claim(ClaimTypes.SerialNumber, user.Id.ToString())
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
