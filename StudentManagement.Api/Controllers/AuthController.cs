@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentManagement.Models.DataObjects;
 using StudentManagement.Services.Interfaces;
-
 
 namespace StudentManagement.Api.Controllers
 {
@@ -18,6 +18,14 @@ namespace StudentManagement.Api.Controllers
             _context = context;
             _userService = userService;
         }
+
+        [HttpGet, Authorize]
+        public ActionResult<object> GetUserIdentity()
+        {
+            var result = _userService.GetUserIdentity();
+            return Ok(result);
+        }
+
 
         [HttpPost("register")]
         public async Task<ActionResult<List<UserViewModel>>> Register(UserDto request)

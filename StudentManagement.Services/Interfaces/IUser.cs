@@ -11,6 +11,7 @@ namespace StudentManagement.Services.Interfaces
     {
         Task<UserDto> Register(UserDto request);
         Task<string> Login(UserDto request);
+        object GetUserIdentity();
     }
 }
 

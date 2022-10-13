@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Http;
 using StudentManagement.Models.DataObjects;
 using StudentManagement.Models.Entities;
 using StudentManagement.Services.Data;
@@ -9,7 +11,6 @@ using System.Security.Cryptography;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 
 namespace StudentManagement.Services.Services
 {
@@ -17,11 +18,13 @@ namespace StudentManagement.Services.Services
     {
         private readonly DataContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserService(DataContext context, IConfiguration configuration)
+        public UserService(DataContext context, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
             _configuration = configuration;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<UserDto> Register(UserDto request)
@@ -53,13 +56,11 @@ namespace StudentManagement.Services.Services
             }
         }
 
-        public static User user = new User();
-
         public async Task<string> Login(UserDto request)
         {
             try
             {
-                //var data = await _context.Users.FirstOrDefaultAsync(user => user.RegNumber == request.RegNumber);
+                //var data = await _context.Users.FirstOrDefaultAsync(user => user.RegNumber == request.RegNumber) (Use this or the code below);
                 var data = await _context.Users.Where(user => user.RegNumber == request.RegNumber).FirstOrDefaultAsync();
                 if (data == null) return "Invalid RegNumber or Password";
 
@@ -68,10 +69,26 @@ namespace StudentManagement.Services.Services
                     return "Invalid RegNumber or Password";
                 }
 
-                string token = CreateToken(user);
+                string token = CreateToken(data);
 
                 return token;
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return string.Empty;
+            }
+        }
+
+        public object GetUserIdentity()
+        {
+            try
+            {
+                var userContext = _httpContextAccessor.HttpContext.User;
+                var data = userContext.Identity?.Name;
+                //var role = _httpContextAccessor.User;
+                return new { };
             }
             catch (Exception ex)
             {

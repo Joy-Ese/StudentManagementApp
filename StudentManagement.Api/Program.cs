@@ -32,7 +32,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 // Services are injected here to be available app wide
 builder.Services.AddScoped<IStudent, StudentService>();
 builder.Services.AddScoped<IUser, UserService>();
-
+builder.Services.AddHttpContextAccessor();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
